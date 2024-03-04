@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="bg-background-200 font-serif">
+    <header class="flex justify-between align-middle items-center px-2 sm:px-4 md:px-8 lg:px-14">
+        <div class="logo bg-slate-200 w-[200px]">
+            <a href="index.html">
+                <img src="./public/img/logoLinenblacktext.png" alt="">
+            </a>
+        </div>
+        <div class="menu flex gap-7 tracking-wide">
+            <div class="md:block hidden">
+                <ul class="flex gap-5 text-base">
+                    <li class="border-b-2">
+                        <a href="" class="relative">
+                            Home
+                        </a>
+                    </li>
+                    <li class="hover:border-b-2 transition-all ease-in-out duration-100"><a href="">Pages</a></li>
+                    <li class="hover:border-b-2 transition-all ease-in-out duration-100"><a href="">Portfolio</a></li>
+                    <li class="hover:border-b-2 transition-all ease-in-out duration-100"><a href="">Blog</a></li>
+                    <li class="hover:border-b-2 transition-all ease-in-out duration-100"><a href="">Shop</a></li>
+                    <li class="hover:border-b-2 transition-all ease-in-out duration-100"><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex gap-5">
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                </div>
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </div>
+                <div class="" id="ct-toggle-top-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="hidden fixed right-0 bottom-0 h-[100vh] w-[300px] bg-dark px-12 py-20" id="ct-top-menu">
+            <div class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-9 h-9 ml-auto mb-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+
+            </div>
+            <div class="text-white mb-2 text-3xl">Menu</div>
+            <div class="w-full h-0.5 bg-white mb-10"></div>
+            <div class="text-white text-lg mb-2"><a href="">Home</a></div>
+            <div class="text-white text-lg mb-2"><a href="">Pages</a></div>
+            <div class="text-white text-lg mb-2"><a href="">Portfollo</a></div>
+            <div class="text-white text-lg mb-2"><a href="">Blog</a></div>
+            <div class="text-white text-lg mb-2"><a href="">Shop</a></div>
+            <div class="text-white text-lg mb-2"><a href="">Contact</a></div>
+        </div>
+    </header>
+
+    <section id="world-class w-[95%]">
+        <div class="row mx-auto px-2 sm:px-4 md:px-8 lg:px-14 pt-20">
+            <div class="flex flex-col lg:flex-row w-full">
+                <div class="lg:basis-1/2 text-[30px] md:text-[40px] lg:text-[70px] mt-auto text-center lg:text-left mb-5 lg:mb-0">World Class Textile Producer with Impeccable Quality</div>
+                <div class="lg:basis-1/2 flex mt-auto justify-center gap-3 lg:-translate-y-40%">
+                    <div class="border-2 text-base xs:text-xl py-4 px-16 hover:bg-dark hover:text-white transition-all duration-300 text-center xs:text-left">
+                        About Us</div>
+                    <div class="bg-dark text-white text-base xs:text-xl py-4 px-16 text-center xs:text-left">Our Products</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[url('./public/img/banner.jpg')] h-[216px] xs:h-[240px] md:h-[320px] lg:h-[360px] xl:h-[530px] w-full mt-20 bg-cover bg-center bg-no-repeat"></section>
+
+    <section id="premium-quality w-[95%]">
+        <div class="row mx-auto px-2 sm:px-4 md:px-8 lg:px-14 pt-20">
+            <div class="flex flex-col md:flex-row">
+                <div class="basis-1/2 mb-5 md:mb-0">
+                    <div class="max-w-[520px] md:max-w-[95%] lg:max-w-[85%]">
+                        <img src="./public/img/CEO-img.jpg" alt="" class="block w-full">
+                    </div>
+                </div>
+                <div class="basis-1/2 w-[95%] md:w-[80%] px-0 md:px-7 my-auto">
+                    <div class="font-extralight tracking-widest text-sm mb-5">PREMIUM QUALITY</div>
+                    <div class="font-extralight text-4xl lg:text-5xl mb-5 lg:mb-10">Find Perfect Materials with Our Services</div>
+                    <div class="text-slate-600 text-base font-sans mb-5 lg:mb-10">We appreciate your trust greatly! Our clients choose us and our products because they know we’re the best.</div>
+                    <div class="mb-5 lg:mb-10 text-xl lg:text-2xl"><span class="text-slate-400">01. </span>Top Quality Fabric</div>
+                    <div class="mb-10 text-xl lg:text-2xl"><span class="text-slate-400">02. </span>Modern Collection</div>
+                    <div class=""><a href="" class="bg-gold-200 hover:bg-gold-400 transition-all duration-300 ease-in-out text-lg lg:text-xl text-white py-4 lg:py-5 px-12">Read More</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/homePage.js"></script>
+</body>
+
+</html>

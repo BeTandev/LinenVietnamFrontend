@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ct-topmenu-expanded {
+    @apply absolute z-50 animate-slideLeft;
+  }
+
+.ct-topmenu-closed{
+  @apply hidden animate-slideRight;
+}
