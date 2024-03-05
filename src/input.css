@@ -9,3 +9,11 @@
 .ct-topmenu-closed{
   @apply hidden animate-slideRight;
 }
+
+.product-item{
+  @apply basis-1/3 overflow-hidden mb-5 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-dark hover:after:w-full transition ease-in-out after:duration-500 hover:after:duration-500;
+}
+
+.blog-item{
+  @apply max-w-[600px]
+}
