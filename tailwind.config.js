@@ -64,6 +64,9 @@ module.exports = {
     },
     translate: {
       '40%': '40%',
+    },
+    fontWeight:{
+      'dropdown-menu': '400'
     }
   },
   plugins: [],

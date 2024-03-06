@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="car3" class="h-96 carousel carousel-vertical rounded-box">
+        <div id="img13" class="carousel-item h-full">
+          <img id="img13_image" alt="Test Image"
+           src="https://placeimg.com/256/400/arch"></div>
+        <div id="img23" class="carousel-item h-full">
+          <img id="img23_image" alt="Test Image"
+           src="https://placeimg.com/256/400/arch"></div>
+        <div id="img33x" class="carousel-item h-full">
+          <img id="img33x_image" alt="Test Image"
+           src="https://placeimg.com/256/400/arch"></div>
+        <div id="img43" class="carousel-item h-full">
+          <img id="img43_image" alt="Test Image"
+           src="https://placeimg.com/256/400/arch"></div>
+        <div id="img53" class="carousel-item h-full">
+          <img id="img53_image" alt="Test Image"
+           src="https://placeimg.com/256/400/arch"></div>
+    </div>
+  
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper('.mySwiper', {
+          spaceBetween: 10,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
+    
+
+    <!-- <script src="./js/homePage.js"></script> -->
+</body>
+
+</html>
