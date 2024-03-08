@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="bg-background-200 font-serif">
+    <header class="flex justify-between align-middle items-center px-2 sm:px-4 md:px-8 lg:px-14">
+        <div class="logo bg-transparent w-[200px]">
+            <a href="index.html">
+                <img src="./public/img/logoLinenblacktext.png" alt="">
+            </a>
+        </div>
+        <div class="menu flex gap-7 tracking-wide">
+            <div class="md:block hidden">
+                <ul class="flex gap-5 text-base">
+                    <li class="border-b-2">
+                        <a href="" class="relative">
+                            Home
+                        </a>
+                    </li>
+                    <li class="">
+                        <div class="flex w-full">
+                            <div class="group relative cursor-pointer">
+                                <div class="flex items-center justify-between">
+                                    <a class="menu-hover text-base font-medium text-black" onClick="">
+                                        Pages
+                                    </a>
+                                </div>
+                                <div class="invisible absolute z-50 flex flex-col py-1 px-6 text-gray-800 shadow-xl group-hover:visible w-[200px]"
+                                    onClick="">
+                                    <a class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
+                                        href="./about-us.html">About Us</a>
+
+                                    <a class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Our
+                                        Services</a>
+                                    <a class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Our
+                                        Team
+                                    </a>
+                                    <a class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2">FAQs
+                                    </a>
+                                    <a class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Pricing
+                                    </a>
+                                    <a class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Newsletter
+                                        Popups
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hover:border-b-2 transition-all ease-in-out duration-100"><a href="">Portfolio</a></li>
+                    <li class="hover:border-b-2 transition-all ease-in-out duration-100"><a href="">Blog</a></li>
+                    <li class="hover:border-b-2 transition-all ease-in-out duration-100"><a href="">Shop</a></li>
+                    <li class="hover:border-b-2 transition-all ease-in-out duration-100"><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex gap-5">
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                </div>
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </div>
+                <div class="" id="ct-toggle-top-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="hidden fixed right-0 bottom-0 h-[100vh] w-[300px] bg-dark px-12 py-20" id="ct-top-menu">
+            <div class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-9 h-9 ml-auto mb-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+
+            </div>
+            <div class="text-white mb-2 text-3xl">Menu</div>
+            <div class="w-full h-0.5 bg-white mb-10"></div>
+            <div class="text-white text-lg mb-2"><a href="">Home</a></div>
+            <div class="text-white text-lg mb-2"><a href="">Pages</a></div>
+            <div class="text-white text-lg mb-2"><a href="">Portfollo</a></div>
+            <div class="text-white text-lg mb-2"><a href="">Blog</a></div>
+            <div class="text-white text-lg mb-2"><a href="">Shop</a></div>
+            <div class="text-white text-lg mb-2"><a href="">Contact</a></div>
+        </div>
+    </header>
+
+    <h2 class="text-3xl md:text-4xl lg:text-5xl text-center mt-20">Checkout</h2>
+    <div class="mt-10">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="mx-auto w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+        </svg>
+    </div>
+
+    <section id="process-payment" class="w-[90%] mx-auto mt-20">
+        <div class="row">
+            <div class="flex flex-col md:flex-row justify-evenly items-center">
+                <div class="text-lg lg:text-xl"><span
+                        class="inline-block py-2 px-4 bg-gold-200 rounded-full text-white font-mono text-base mr-3">1</span>
+                    Shopping
+                    Cart</div>
+
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-slate-300">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                </div>
+
+                <div class="text-lg lg:text-xl"><span
+                        class="inline-block py-2 px-4 bg-gold-200 rounded-full text-white font-mono text-base mr-3">2</span>
+                    Payment &
+                    Delivery Options</div>
+
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-slate-300">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                </div>
+
+                <div class="text-lg lg:text-xl"><span
+                        class="inline-block py-2 px-4 bg-black rounded-full text-white font-mono text-base mr-3">3</span>
+                    Order
+                    Received</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="payment-form" class="w-[90%] mx-auto mt-20 mb-20">
+        <div class="row">
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="billing-detail basis-3/5">
+                    <h2 class="text-3xl mb-5">Billing details</h2>
+                    <div class="flex gap-3 mb-5 w-full">
+                        <div class="flex flex-col basis-1/2">
+                            <label for="" class="text-xl mb-3">Full name:<span class="text-red-600">*</span></label>
+                            <input type="text"
+                                class="w-full bg-transparent focus:outline-none out border-b-2 focus:border-slate-900 text-lg">
+                        </div>
+                        <div class="flex flex-col basis-1/2">
+                            <label for="" class="text-xl mb-3">Phone:<span class="text-red-600">*</span></label>
+                            <input type="number"
+                                class="w-full bg-transparent focus:outline-none out border-b-2 focus:border-slate-900 text-lg">
+                        </div>
+                    </div>
+                    <div class="flex flex-col mb-5">
+                        <label for="" class="text-xl mb-3">Company name(optional):</label>
+                        <input type="text"
+                            class="w-full bg-transparent focus:outline-none out border-b-2 focus:border-slate-900 text-lg">
+                    </div>
+                    <div class="flex flex-col mb-5">
+                        <label for="" class="text-xl mb-3">Address:<span class="text-red-600">*</span></label>
+                        <input type="text"
+                            class="w-full bg-transparent focus:outline-none out border-b-2 focus:border-slate-900 text-lg">
+                    </div>
+                    <div class="flex gap-3 mb-5">
+                        <div class="flex flex-col basis-1/3">
+                            <label for="" class="text-xl mb-3">Street:<span class="text-red-600">*</span></label>
+                            <input type="text"
+                                class="w-full bg-transparent focus:outline-none out border-b-2 focus:border-slate-900 text-lg">
+                        </div>
+                        <div class="flex flex-col basis-1/3">
+                            <label for="" class="text-xl mb-3">Ward:<span class="text-red-600">*</span></label>
+                            <input type="text"
+                                class="w-full bg-transparent focus:outline-none out border-b-2 focus:border-slate-900 text-lg">
+                        </div>
+                        <div class="flex flex-col basis-1/3">
+                            <label for="" class="text-xl mb-3">District:<span class="text-red-600">*</span></label>
+                            <input type="text"
+                                class="w-full bg-transparent focus:outline-none out border-b-2 focus:border-slate-900 text-lg">
+                        </div>
+                    </div>
+                    <div class="flex flex-col mb-5">
+                        <label for="" class="text-xl mb-3">City:<span class="text-red-600">*</span></label>
+                        <input type="text"
+                            class="w-full bg-transparent focus:outline-none out border-b-2 focus:border-slate-900 text-lg">
+                    </div>
+                    <div class="flex flex-col mb-5">
+                        <label for="" class="text-xl mb-3">Email:<span class="text-red-600">*</span></label>
+                        <input type="email"
+                            class="w-full bg-transparent focus:outline-none out border-b-2 focus:border-slate-900 text-lg">
+                    </div>
+                    <div class="flex flex-col mb-5">
+                        <label for="" class="text-xl mb-3">Note:<span class="text-red-600">*</span></label>
+                        <input type="text"
+                            class="w-full bg-transparent focus:outline-none out border-b-2 focus:border-slate-900 text-lg">
+                    </div>
+                </div>
+                <div class="your-order basis-2/5">
+                    <h2 class="text-3xl mb-5">Your order</h2>
+                    <div class="wrap-order bg-white py-7 px-12">
+                        <div class="order-item mb-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="text-lg md:text-base">Green Shutters <span class="inline-block ml-3">x
+                                        1</span></div>
+                                <div class="text-lg md:text-base">$67.00</div>
+                            </div>
+                            <hr class="w-full h-[1px] bg-slate-200">
+                        </div>
+                        <div class="order-item mb-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="text-lg md:text-base">Green Shutters <span class="inline-block ml-3">x
+                                        1</span></div>
+                                <div class="text-lg md:text-base">$67.00</div>
+                            </div>
+                            <hr class="w-full h-[1px] bg-slate-200">
+                        </div>
+                        <div class="order-item mb-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="text-lg md:text-base">Subtotal</div>
+                                <div class="text-lg md:text-base">$67.00</div>
+                            </div>
+                            <hr class="w-full h-[1px] bg-slate-200">
+                        </div>
+                        <div class="order-item mb-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="text-lg md:text-base">Shipping</div>
+                                <div class="">
+                                    <div class="GHTK-check flex items-center align-middle">
+                                        <input type="radio" class="mr-3">
+                                        <span>GHTK</span>
+                                    </div>
+                                    <div class="Viettel-check flex items-center align-middle">
+                                        <input type="radio" class="mr-3">
+                                        <span>Viettel Post</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="w-full h-[1px] bg-slate-200">
+                        </div>
+                        <div class="order-item mb-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="text-lg md:text-base">Free</div>
+                                <div class="text-lg md:text-base">$13.00</div>
+                            </div>
+                            <hr class="w-full h-[1px] bg-slate-200">
+                        </div>
+                        <div class="order-item mb-5">
+                            <div class="flex justify-between mb-5 text-gold-200">
+                                <div class="text-lg md:text-base">Total</div>
+                                <div class="text-lg md:text-base">$80.00</div>
+                            </div>
+                            <hr class="w-full h-[1px] bg-slate-200">
+                        </div>
+                    </div>
+                    <h2 class="text-3xl mb-5 mt-10">Payment</h2>
+                    <div class="wrap-payment bg-white py-7 px-12">
+                        <div class="payment-item mb-5">
+                            <div class="flex gap-3 mb-5 text-lg md:text-base">
+                                <input type="radio">
+                                <span>Check payments</span>
+                            </div>
+                            <hr class="w-full h-[1px] bg-slate-200">
+                        </div>
+                        <div class="payment-item mb-5">
+                            <div class="flex gap-3 mb-5 text-lg md:text-base">
+                                <input type="radio">
+                                <span>VietQR</span>
+                            </div>
+                            <hr class="w-full h-[1px] bg-slate-200">
+                        </div>
+                        <div
+                            class="w-full bg-gold-200 hover:bg-gold-400 transition duration-300 cursor-pointer text-white text-xl py-5 flex justify-center mt-5">
+                            Place order</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="w-full text-white bg-dark py-16">
+        <div class="w-[90%] grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 mx-auto gap-10">
+            <div class="about-us-block">
+                <div class="text-3xl mb-5">About Us</div>
+                <hr class="w-full h-0.5 mb-5">
+                <div class="leading-8">Linen Vietnam CO.,LTD headquartered in Hanoi and representative office in Ho Chi
+                    Minh City. We operate professionally in the field of trading and developing fabrics with natural
+                    materials. Especially, the fabrics are woven from linen yarns imported from France and Belgium. In
+                    addition, we also trade in fabric products from cotton yarns, silk yarns, visco yarns, tencel yarns,
+                    bamboo yarns,...</div>
+            </div>
+            <div class="contact-block">
+                <div class="text-3xl mb-5">Contact Us</div>
+                <hr class="w-full h-0.5 mb-5">
+                <div class="font-sans mb-3"><strong>Email:</strong> Leehuyen.linen@gmail.com</div>
+                <div class="font-sans mb-3"><strong>Phone number:</strong> +84365157997</div>
+                <div class="font-sans mb-3"><strong>Address:</strong> C01-11 Chung cư Safira Khang Điền, số 454 Võ Chí
+                    Công, phường Phú Hữu, Thành phố Thủ Đức </div>
+            </div>
+            <div class="social link block">
+                <div class="text-3xl mb-5">Social Media</div>
+                <hr class="w-full h-0.5 mb-5">
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/homePage.js"></script>
+</body>
+
+</html>
