@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="bg-background-200 font-serif">
+    <header class="flex justify-between align-middle items-center px-2 sm:px-4 md:px-8 lg:px-14">
+        <div class="logo bg-transparent w-[200px]">
+            <a href="index.html">
+                <img src="./public/img/logoLinenblacktext.png" alt="">
+            </a>
+        </div>
+        <div class="menu flex gap-7 tracking-wide">
+            <div class="md:block hidden">
+                <ul class="flex gap-5 text-base">
+                    <li class="border-b-2">
+                        <a href="" class="relative">
+                            Home
+                        </a>
+                    </li>
+                    <li class="">
+                        <div class="flex w-full">
+                            <div class="group relative cursor-pointer">
+                                <div class="flex items-center justify-between">
+                                    <a class="menu-hover text-base font-medium text-black" onClick="">
+                                        Pages
+                                    </a>
+                                </div>
+                                <div class="invisible absolute z-50 flex flex-col py-1 px-6 text-gray-800 shadow-xl group-hover:visible w-[200px]"
+                                    onClick="">
+                                    <a class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
+                                        href="./about-us.html">About Us</a>
+
+                                    <a class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Our
+                                        Services</a>
+                                    <a class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Our
+                                        Team
+                                    </a>
+                                    <a class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2">FAQs
+                                    </a>
+                                    <a class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Pricing
+                                    </a>
+                                    <a class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Newsletter
+                                        Popups
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hover:border-b-2 transition-all ease-in-out duration-100"><a href="">Portfolio</a></li>
+                    <li class="hover:border-b-2 transition-all ease-in-out duration-100"><a href="">Blog</a></li>
+                    <li class="hover:border-b-2 transition-all ease-in-out duration-100"><a href="">Shop</a></li>
+                    <li class="hover:border-b-2 transition-all ease-in-out duration-100"><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex gap-5">
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                </div>
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </div>
+                <div class="" id="ct-toggle-top-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="hidden fixed right-0 bottom-0 h-[100vh] w-[300px] bg-dark px-12 py-20" id="ct-top-menu">
+            <div class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-9 h-9 ml-auto mb-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+
+            </div>
+            <div class="text-white mb-2 text-3xl">Menu</div>
+            <div class="w-full h-0.5 bg-white mb-10"></div>
+            <div class="text-white text-lg mb-2"><a href="">Home</a></div>
+            <div class="text-white text-lg mb-2"><a href="">Pages</a></div>
+            <div class="text-white text-lg mb-2"><a href="">Portfollo</a></div>
+            <div class="text-white text-lg mb-2"><a href="">Blog</a></div>
+            <div class="text-white text-lg mb-2"><a href="">Shop</a></div>
+            <div class="text-white text-lg mb-2"><a href="">Contact</a></div>
+        </div>
+    </header>
+
+    <h2 class="text-3xl md:text-4xl lg:text-5xl text-center mt-20">Linen Fabric</h2>
+    <div class="mt-10">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="mx-auto w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+        </svg>
+    </div>
+    <section id="product-detail-item"></section>
+
+    <footer class="w-full text-white bg-dark py-16">
+        <div class="w-[90%] grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 mx-auto gap-10">
+            <div class="about-us-block">
+                <div class="text-3xl mb-5">About Us</div>
+                <hr class="w-full h-0.5 mb-5">
+                <div class="leading-8">Linen Vietnam CO.,LTD headquartered in Hanoi and representative office in Ho Chi
+                    Minh City. We operate professionally in the field of trading and developing fabrics with natural
+                    materials. Especially, the fabrics are woven from linen yarns imported from France and Belgium. In
+                    addition, we also trade in fabric products from cotton yarns, silk yarns, visco yarns, tencel yarns,
+                    bamboo yarns,...</div>
+            </div>
+            <div class="contact-block">
+                <div class="text-3xl mb-5">Contact Us</div>
+                <hr class="w-full h-0.5 mb-5">
+                <div class="font-sans mb-3"><strong>Email:</strong> Leehuyen.linen@gmail.com</div>
+                <div class="font-sans mb-3"><strong>Phone number:</strong> +84365157997</div>
+                <div class="font-sans mb-3"><strong>Address:</strong> C01-11 Chung cư Safira Khang Điền, số 454 Võ Chí
+                    Công, phường Phú Hữu, Thành phố Thủ Đức </div>
+            </div>
+            <div class="social link block">
+                <div class="text-3xl mb-5">Social Media</div>
+                <hr class="w-full h-0.5 mb-5">
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/homePage.js"></script>
+</body>
+
+</html>
