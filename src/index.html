@@ -24,50 +24,33 @@
                         </a>
                     </li>
                     <li class="">
-                        <div
-                        class="flex w-full"
-                      >
-                        <div class="group relative cursor-pointer">
-                          <div class="flex items-center justify-between">
-                            <a
-                              class="menu-hover text-base font-medium text-black"
-                              onClick=""
-                            >
-                              Pages
-                            </a>
-                          </div>
-                          <div
-                            class="invisible absolute z-50 flex flex-col py-1 px-6 text-gray-800 shadow-xl group-hover:visible w-[200px]"
-                            onClick=""
-                          >
-                            <a
-                              class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2" href="./about-us.html"
-                              >About Us</a
-                            >
-                    
-                            <a
-                              class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
-                              >Our Services</a
-                            >
-                            <a
-                              class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
-                              >Our Team
-                            </a>
-                            <a
-                              class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
-                              >FAQs
-                            </a>
-                            <a
-                              class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
-                              >Pricing
-                            </a>
-                            <a
-                              class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
-                              >Newsletter Popups
-                            </a>
-                          </div>
+                        <div class="flex w-full">
+                            <div class="group relative cursor-pointer">
+                                <div class="flex items-center justify-between">
+                                    <a class="menu-hover text-base font-medium text-black" onClick="">
+                                        Pages
+                                    </a>
+                                </div>
+                                <div class="invisible absolute z-50 flex flex-col py-1 px-6 text-gray-800 shadow-xl group-hover:visible w-[200px]"
+                                    onClick="">
+                                    <a class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
+                                        href="./about-us.html">About Us</a>
+
+                                    <a class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Our
+                                        Services</a>
+                                    <a class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Our
+                                        Team
+                                    </a>
+                                    <a class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2">FAQs
+                                    </a>
+                                    <a class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Pricing
+                                    </a>
+                                    <a class="my-2 block py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Newsletter
+                                        Popups
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </li>
                     <li class="hover:border-b-2 transition-all ease-in-out duration-100"><a href="">Portfolio</a></li>
                     <li class="hover:border-b-2 transition-all ease-in-out duration-100"><a href="">Blog</a></li>
@@ -85,7 +68,7 @@
                 </a>
                 <div class="">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-7 h-7">
+                        stroke="currentColor" class="w-7 h-7" id="search-icon">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                     </svg>
@@ -119,20 +102,48 @@
         </div>
     </header>
 
+    <section class="w-full h-[450px] bg-black fixed z-50 top-0 hidden" id="search-section">
+        <div class="w-[90%] mx-auto">
+            <div class="w-full flex justify-between items-center mt-10">
+                <img src="./public/img/logoLinen.png" alt="" class="w-[220px]">
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-12 h-12 text-white" id="close-search-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </div>
+            </div>
+            <div class="mt-16 flex items-center">
+                <input type="text" placeholder="Type words and hit enter" class="bg-transparent w-full py-5 px-10 text-white text-2xl focus:outline-none focus:border-b-white border-b">
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-white cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                      </svg>
+            </div>
+        </div>
+    </section>
+
     <section id="world-class" class="w-[95%]">
         <div class="row mx-auto px-2 sm:px-4 md:px-8 lg:px-14 pt-20">
             <div class="flex flex-col lg:flex-row w-full">
-                <div class="lg:basis-1/2 text-[30px] md:text-[40px] lg:text-[70px] mt-auto text-center lg:text-left mb-5 lg:mb-0">World Class Textile Producer with Impeccable Quality</div>
+                <div
+                    class="lg:basis-1/2 text-[30px] md:text-[40px] lg:text-[70px] mt-auto text-center lg:text-left mb-5 lg:mb-0">
+                    World Class Textile Producer with Impeccable Quality</div>
                 <div class="lg:basis-1/2 flex mt-auto justify-center gap-3 lg:-translate-y-40%">
-                    <a class="border-2 text-base xs:text-xl py-4 px-16 hover:bg-dark hover:text-white transition-all duration-300 text-center xs:text-left">
+                    <a
+                        class="border-2 text-base xs:text-xl py-4 px-16 hover:bg-dark hover:text-white transition-all duration-300 text-center xs:text-left">
                         About Us</a>
-                    <a href="./products.html" class="bg-dark text-white text-base xs:text-xl py-4 px-16 text-center xs:text-left">Our Products</a>
+                    <a href="./products.html"
+                        class="bg-dark text-white text-base xs:text-xl py-4 px-16 text-center xs:text-left">Our
+                        Products</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-[url('./public/img/banner.jpg')] h-[216px] xs:h-[240px] md:h-[320px] lg:h-[360px] xl:h-[530px] w-full mt-20 bg-cover bg-center bg-no-repeat"></section>
+    <section
+        class="bg-[url('./public/img/banner.jpg')] h-[216px] xs:h-[240px] md:h-[320px] lg:h-[360px] xl:h-[530px] w-full mt-20 bg-cover bg-center bg-no-repeat">
+    </section>
 
     <section id="premium-quality" class="w-[90%] mx-auto">
         <div class="row mx-auto px-2 sm:px-4 md:px-8 lg:px-14 pt-20">
@@ -144,23 +155,36 @@
                 </div>
                 <div class="basis-1/2 w-[95%] md:w-[80%] px-0 md:px-7 my-auto">
                     <div class="font-extralight tracking-widest text-sm mb-5">PREMIUM QUALITY</div>
-                    <div class="font-extralight text-4xl lg:text-5xl mb-5 lg:mb-10">Find Perfect Materials with Our Services</div>
-                    <div class="text-slate-600 text-base font-sans mb-5 lg:mb-10">We appreciate your trust greatly! Our clients choose us and our products because they know we’re the best.</div>
-                    <div class="mb-5 lg:mb-10 text-xl lg:text-2xl"><span class="text-slate-400">01. </span>Top Quality Fabric</div>
-                    <div class="mb-10 text-xl lg:text-2xl"><span class="text-slate-400">02. </span>Modern Collection</div>
-                    <div class=""><a href="" class="bg-gold-200 hover:bg-gold-400 transition-all duration-300 ease-in-out text-lg lg:text-xl text-white py-4 lg:py-5 px-12">Read More</a></div>
+                    <div class="font-extralight text-4xl lg:text-5xl mb-5 lg:mb-10">Find Perfect Materials with Our
+                        Services</div>
+                    <div class="text-slate-600 text-base font-sans mb-5 lg:mb-10">We appreciate your trust greatly! Our
+                        clients choose us and our products because they know we’re the best.</div>
+                    <div class="mb-5 lg:mb-10 text-xl lg:text-2xl"><span class="text-slate-400">01. </span>Top Quality
+                        Fabric</div>
+                    <div class="mb-10 text-xl lg:text-2xl"><span class="text-slate-400">02. </span>Modern Collection
+                    </div>
+                    <div class=""><a href=""
+                            class="bg-gold-200 hover:bg-gold-400 transition-all duration-300 ease-in-out text-lg lg:text-xl text-white py-4 lg:py-5 px-12">Read
+                            More</a></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-[url('./public/img/banner-2.jpg')] h-[216px] xs:h-[240px] md:h-[320px] lg:h-[360px] xl:h-[530px] w-full mt-20 bg-cover bg-center bg-no-repeat"></section>
+    <section
+        class="bg-[url('./public/img/banner-2.jpg')] h-[216px] xs:h-[240px] md:h-[320px] lg:h-[360px] xl:h-[530px] w-full mt-20 bg-cover bg-center bg-no-repeat">
+    </section>
 
     <section id="what-we-offer" class="mt-20 w-[95%] mx-auto">
         <div class="row mx-auto">
             <div class="uppercase text-center mb-5">What We Offer</div>
-            <div class=" text-3xl lg:text-4xl xl:text-5xl text-center w-[80%] lg:w-[70%] mx-auto leading-[3rem] xl:leading-[3.5rem] mb-7">Our huge range of made-to-measure clothing and home textiles offers a variety of solutions and styles</div>
-            <div class="text-center w-fit mx-auto text-lg relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-dark hover:after:w-0 transition ease-in-out after:duration-500 hover:after:duration-500"><a href="">Read More</a></div>
+            <div
+                class=" text-3xl lg:text-4xl xl:text-5xl text-center w-[80%] lg:w-[70%] mx-auto leading-[3rem] xl:leading-[3.5rem] mb-7">
+                Our huge range of made-to-measure clothing and home textiles offers a variety of solutions and styles
+            </div>
+            <div
+                class="text-center w-fit mx-auto text-lg relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-dark hover:after:w-0 transition ease-in-out after:duration-500 hover:after:duration-500">
+                <a href="">Read More</a></div>
         </div>
     </section>
 
@@ -207,9 +231,11 @@
 
     <section id="message" class="mt-20 w-full mx-auto bg-background-400 py-28">
         <div class="row">
-            <div class="text-center mx-auto text-2xl md:text-4xl font-thin mb-5 w-full md:w-[500px]">Get the best blog stories into your inbox!</div>
+            <div class="text-center mx-auto text-2xl md:text-4xl font-thin mb-5 w-full md:w-[500px]">Get the best blog
+                stories into your inbox!</div>
             <div class="text-center mb-5 gap-1">
-                <input type="text" class="w-[55%] xs:w-[70%] md:w-[500px] py-3 px-6 shadow-2xl focus:outline-none" placeholder="Enter Your Email Address">
+                <input type="text" class="w-[55%] xs:w-[70%] md:w-[500px] py-3 px-6 shadow-2xl focus:outline-none"
+                    placeholder="Enter Your Email Address">
                 <button class="bg-white py-3 px-6 tracking-widest shadow-2xl">Subsrcibe</button>
             </div>
             <div class="flex mx-auto text-center justify-center">
@@ -223,9 +249,13 @@
         <div class="row max-w-[90%] mx-auto flex flex-col md:flex-row">
             <div class="basis-1/2 w-[95%] md:w-[80%] px-0 md:px-10 mt-auto mb-auto">
                 <div class="font-extralight tracking-widest text-sm mb-5">INDIVIDUAL APPROACH</div>
-                <div class="font-extralight text-4xl lg:text-5xl mb-5 lg:mb-10">We Believe that Every Client Is Unique</div>
-                <div class="text-slate-600 text-base font-sans mb-10 lg:mb-10">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas vsit aspernatur aut odit aut fugit sed quia.</div>
-                <div class=""><a href="" class="bg-gold-200 hover:bg-gold-400 transition-all duration-300 ease-in-out text-lg lg:text-xl text-white py-4 lg:py-5 px-12">More Details</a></div>
+                <div class="font-extralight text-4xl lg:text-5xl mb-5 lg:mb-10">We Believe that Every Client Is Unique
+                </div>
+                <div class="text-slate-600 text-base font-sans mb-10 lg:mb-10">Dicta sunt explicabo. Nemo enim ipsam
+                    voluptatem quia voluptas vsit aspernatur aut odit aut fugit sed quia.</div>
+                <div class=""><a href=""
+                        class="bg-gold-200 hover:bg-gold-400 transition-all duration-300 ease-in-out text-lg lg:text-xl text-white py-4 lg:py-5 px-12">More
+                        Details</a></div>
             </div>
             <div class="basis-1/2 mb-5 md:mb-0 mt-10 md:mt-0">
                 <div class="max-w-full md:max-w-[95%] lg:max-w-[100%]">
@@ -278,7 +308,9 @@
                 </div>
             </div>
             <div class="text-center mt-10">
-                <a href="" class="font-serif text-xl border-2 rounded-3xl py-3 px-12 hover:bg-dark hover:text-white transition duration-300">Xem Thêm</a>
+                <a href=""
+                    class="font-serif text-xl border-2 rounded-3xl py-3 px-12 hover:bg-dark hover:text-white transition duration-300">Xem
+                    Thêm</a>
             </div>
         </div>
     </section>
@@ -288,14 +320,19 @@
             <div class="about-us-block">
                 <div class="text-3xl mb-5">About Us</div>
                 <hr class="w-full h-0.5 mb-5">
-                <div class="leading-8">Linen Vietnam CO.,LTD headquartered in Hanoi and representative office in Ho Chi Minh City. We operate professionally in the field of trading and developing fabrics with natural materials. Especially, the fabrics are woven from linen yarns imported from France and Belgium. In addition, we also trade in fabric products from cotton yarns, silk yarns, visco yarns, tencel yarns, bamboo yarns,...</div>
+                <div class="leading-8">Linen Vietnam CO.,LTD headquartered in Hanoi and representative office in Ho Chi
+                    Minh City. We operate professionally in the field of trading and developing fabrics with natural
+                    materials. Especially, the fabrics are woven from linen yarns imported from France and Belgium. In
+                    addition, we also trade in fabric products from cotton yarns, silk yarns, visco yarns, tencel yarns,
+                    bamboo yarns,...</div>
             </div>
             <div class="contact-block">
                 <div class="text-3xl mb-5">Contact Us</div>
                 <hr class="w-full h-0.5 mb-5">
                 <div class="font-sans mb-3"><strong>Email:</strong> Leehuyen.linen@gmail.com</div>
                 <div class="font-sans mb-3"><strong>Phone number:</strong> +84365157997</div>
-                <div class="font-sans mb-3"><strong>Address:</strong> C01-11 Chung cư Safira Khang Điền, số 454 Võ Chí Công, phường Phú Hữu, Thành phố Thủ Đức </div>
+                <div class="font-sans mb-3"><strong>Address:</strong> C01-11 Chung cư Safira Khang Điền, số 454 Võ Chí
+                    Công, phường Phú Hữu, Thành phố Thủ Đức </div>
             </div>
             <div class="social link block">
                 <div class="text-3xl mb-5">Social Media</div>

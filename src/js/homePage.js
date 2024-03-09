@@ -14,6 +14,20 @@ document.addEventListener("click", (e) => {
   }
 });
 
+const searchIcon = document.getElementById('search-icon')
+const searchSection = document.getElementById('search-section')
+const closeSearchIcon = document.getElementById('close-search-icon')
+
+searchIcon.addEventListener("click", (e) => {
+  searchSection.classList.add('ct-slide-down')
+  searchSection.classList.remove('hidden')
+})
+closeSearchIcon.addEventListener("click", () => {
+  // console.log(123)
+  searchSection.classList.add('hidden')
+  searchSection.classList.remove('ct-slide-down')
+})
+
 
 // Xử lí thanh trượt giá
 let slider = document.getElementById("myRange");

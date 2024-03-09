@@ -6,8 +6,8 @@
     @apply absolute z-50 animate-slideLeft;
   }
 
-.ct-topmenu-closed{
-  @apply hidden animate-slideRight;
+.ct-slide-down{
+  @apply block animate-slideDown
 }
 
 .product-item{

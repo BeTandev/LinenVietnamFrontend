@@ -28,24 +28,24 @@ module.exports = {
             opacity: 1
           }
         },
-        slideRight:{
-          '0%': {transform: 'translateX(0%)'},
-          '100%': {transform: 'translateX(100%)'}
+        slideDown:{
+          '0': {transform: 'translateY(0%)'},
+          '100': {transform: 'translateY(100%)'}
         },
-        fadeOut:{
-          from: {
-            opacity: 1
+        fadeDown:{
+          from:{
+            opacity: 0
           },
           to:{
-            opacity: 0
+            opacity: 1
           }
-        },
+        }
       },
       animation:{
         slideLeft: 'slideLeft 0.4s ease-in-out',
         fadeIn: 'fadeIn 0.5s ease-in-out',
-        slideRight: 'slideRight 0.4s ease-in-out',
-        fadeOut: 'fadeOut 0.5s ease-in-out'
+        slideDown: 'slideDown 0.4s ease-in-out',
+        fadeDown: 'fadeDown 0.5s ease-in-out'
       },
       screens:{
         'xs': '480px',
