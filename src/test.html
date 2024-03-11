@@ -9,95 +9,27 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
 
 <body>
-
-    <div id="car3" class="h-96 carousel carousel-vertical rounded-box">
-        <div id="img13" class="carousel-item h-full">
-          <img id="img13_image" alt="Test Image"
-           src="https://placeimg.com/256/400/arch"></div>
-        <div id="img23" class="carousel-item h-full">
-          <img id="img23_image" alt="Test Image"
-           src="https://placeimg.com/256/400/arch"></div>
-        <div id="img33x" class="carousel-item h-full">
-          <img id="img33x_image" alt="Test Image"
-           src="https://placeimg.com/256/400/arch"></div>
-        <div id="img43" class="carousel-item h-full">
-          <img id="img43_image" alt="Test Image"
-           src="https://placeimg.com/256/400/arch"></div>
-        <div id="img53" class="carousel-item h-full">
-          <img id="img53_image" alt="Test Image"
-           src="https://placeimg.com/256/400/arch"></div>
+  <div class="wrap-img-product-detail flex flex-col-reverse sm:flex-row basis-[51%] gap-10">
+    <div class="all-img-product-detail flex flex-row sm:flex-col gap-5" id="img-product-detail-parent">
+        <!-- Các thẻ img -->
     </div>
-  
-      <!-- Swiper JS -->
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-      <script>
-        var swiper = new Swiper('.mySwiper', {
-          spaceBetween: 10,
-          centeredSlides: true,
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        });
-      </script>
-    
+    <div class="img-product-detail w-[100%] overflow-hidden flex" id="list-image">
+        <div class="swiper-container" id="slider-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./public/img/CEO-img.jpg" alt="" class="object-cover block max-w-full"></div>
+                <div class="swiper-slide"><img src="./public/img/linen-fabric.jpg" alt="" class="object-cover block max-w-full"></div>
+                <div class="swiper-slide"><img src="./public/img/linen-yard.jpg" alt="" class="object-cover block max-w-full"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!-- <script src="./js/homePage.js"></script> -->
-
-
-
-    <!-- const listImages = document.querySelector('.list-images')
-const imgs = document.querySelectorAll('.img-div')
-const btnLeft = document.getElementById('btn-left')
-const btnRight = document.getElementById('btn-right')
-let current = 0 
-
-const handleChangeSLide = () => {
-  if (current == imgs.length - 1){
-    current == 0
-    // let width = imgs[0].offsetWidth
-    let width = 1000
-    listImages.style.transform = `translateX(0px)`
-  }else{
-    current++
-    // let width = imgs[0].offsetWidth
-    let width = 500
-    listImages.style.transform = `translateX(${width * -1 * current}px)`
-  }
-}
-btnRight.addEventListener('click', () => {
-  clearInterval(handleChangeSLide)
-  handleChangeSLide()
-  handleEventChangeSlide = setInterval(() => {handleChangeSLide}, 4000)
-})
-btnLeft.addEventListener('click', () => {
-  clearInterval(handleChangeSLide)
-  if (current == 0){
-    current == length - 1
-    // let width = imgs[0].offsetWidth
-    let width = 500
-    listImages.style.transform = `translateX(${width * -1 * current}px)`
-  }else{
-    current--
-    // let width = imgs[0].offsetWidth
-    let width = 500
-    listImages.style.transform = `translateX(${width * -1 * current}px)`
-  }
-  handleEventChangeSlide = setInterval(() => {handleChangeSLide}, 4000)
-})
-let handleEventChangeSlide = setInterval(() => {handleChangeSLide}, 4000) -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>
