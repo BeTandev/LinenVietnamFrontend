@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+
+<body class="font-serif bg-slate-200">
+    <section>
+        <div class="w-[200px] h-[100vh] bg-white px-5 fixed" id="left-side">
+            <div class="absolute mt-[50vh] translate-y-[-50%]">
+                <a href="./all-products.html" class="flex gap-3 items-center mb-4 cursor-pointer">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
+                        </svg>
+                    </span>
+                    <span>All Products</span>
+                </a>
+                <a href="./add-new-product.html" class="flex gap-3 items-center mb-4 cursor-pointer">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
+                        </svg>
+                    </span>
+                    <span>New Product</span>
+                </a>
+                <a class="flex gap-3 items-center mb-4 cursor-pointer">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
+                        </svg>
+                    </span>
+                    <span>Order</span>
+                </a>
+            </div>
+        </div>
+        <div class="ml-[200px] px-12 py-10">
+            <div class="text-3xl border-b-2 border-slate-500">Add New Product</div>
+            <div class="wrap-items mt-20">
+                <div class="flex flex-col mb-10">
+                    <label for="" class="text-xl mb-3">Tên sản phẩm:</label>
+                    <input type="text"
+                        class="bg-transparent border-b-2 border-slate-400 text-2xl focus:outline-none focus:border-slate-700 transition duration-300 max-w-[720px]">
+                </div>
+                <div class="flex flex-col mb-10">
+                    <label for="" class="text-xl mb-3">Mô tả sản phẩm:</label>
+                    <textarea type="text"
+                        class="bg-transparent border border-slate-400 text-base rounded-lg px-5 py-5 focus:outline-none focus:border-slate-700 transition duration-300 max-w-[720px] h-[200px]"></textarea>
+                </div>
+                <div class="flex justify-between max-w-[720px] gap-10">
+                    <div class="flex flex-col mb-10 basis-1/2">
+                        <label for="" class="text-xl mb-3">Giá:</label>
+                        <input type="number"
+                            class="bg-transparent border-b-2 border-slate-400 text-2xl focus:outline-none focus:border-slate-700 transition duration-300 w-full">
+                    </div>
+                    <div class="flex flex-col mb-10 basis-1/2">
+                        <label for="" class="text-xl mb-3">Hàng trong kho:</label>
+                        <input type="number"
+                            class="bg-transparent border-b-2 border-slate-400 text-2xl focus:outline-none focus:border-slate-700 transition duration-300 w-full">
+                    </div>
+                </div>
+                <div class="flex flex-col mb-10">
+                    <label for="" class="text-xl mb-3">Category:</label>
+                    <input type="text"
+                        class="bg-transparent border-b-2 border-slate-400 text-2xl focus:outline-none focus:border-slate-700 transition duration-300 max-w-[720px]">
+                </div>
+                <div class="flex flex-col mb-10">
+                    <label for="" class="text-xl mb-3">Tags:</label>
+                    <input type="text"
+                        class="bg-transparent border-b-2 border-slate-400 text-2xl focus:outline-none focus:border-slate-700 transition duration-300 max-w-[720px]">
+                </div>
+                <div class="flex justify-between max-w-[720px] gap-10">
+                    <div class="flex flex-col mb-10 basis-1/2">
+                        <label for="" class="text-xl mb-3">Cân nặng (g):</label>
+                        <input type="text"
+                            class="bg-transparent border-b-2 border-slate-400 text-2xl focus:outline-none focus:border-slate-700 transition duration-300 w-full">
+                    </div>
+                    <div class="flex flex-col mb-10 basis-1/2">
+                        <label for="" class="text-xl mb-3">Chiều dài (cm):</label>
+                        <input type="text"
+                            class="bg-transparent border-b-2 border-slate-400 text-2xl focus:outline-none focus:border-slate-700 transition duration-300 w-full">
+                    </div>
+                </div>
+                <div class="flex flex-col mb-10 basis-1/2">
+                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Ảnh đại diện sản phẩm:</label>
+                    <input
+                        class="block max-w-[250px] text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                        id="file_input" type="file">
+                </div>
+                <div class="flex flex-col mb-10 basis-1/2">
+                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Hình ảnh thêm:</label>
+                    <input
+                        class="block max-w-[250px] text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                        id="file_input" type="file" multiple>
+                </div>
+                <button class="bg-white px-10 py-4 border border-slate-900 rounded-lg hover:bg-black hover:text-white transition duration-300">Thêm sản phẩm</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
